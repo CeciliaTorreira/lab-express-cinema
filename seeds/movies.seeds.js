@@ -102,3 +102,16 @@ Movie.insertMany(movies)
 .catch((error)=>{
     console.log(error)
 })
+
+
+//! async await hecho con Jorge por la mañana
+// async function insertSeeds () {
+
+// try{
+// await Movie.insertMany(movies)
+// console.log("Data añadida")
+
+// }
+// catch.(error){
+//     console.log
+// }

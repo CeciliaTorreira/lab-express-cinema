@@ -1,3 +1,6 @@
+//! SIEMPRE EMPEZAR CON NPM INSTALL CUANDO CLONAMOS UN REPOSITORIO
+
+
 const express = require('express');
 const router = express.Router();
 
@@ -23,6 +26,8 @@ router.get("/movies", (req, res, next) => {
     next(error);
    })
 });
+
+//! Intentar ser descriptivos cuando trabajamos y sustituir response por algo más adecuado
 
 //* GET /movies/:id => Detalles de cada película
 

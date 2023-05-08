@@ -1,13 +1,27 @@
 <div>
-<img src="{{singleMovie.image}}" alt="Movie poster">
-<h3>{{singleMovie.title}}</h3>
+  <div>
+    <img src="{{singleMovie.image}}" alt="Movie poster" />
+  </div>
+  <div>
+    <h3>{{singleMovie.title}}</h3>
 
-<h5>Director: {{singleMovie.director}}</h5>
+    <h5>Director: {{singleMovie.director}}</h5>
 
-<h5>Stars: {{singleMovie.stars}}</h5>
+    <h5>Stars: </h5>
+    <ul>
+      {{#each singleMovie.stars}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
 
-<p>{{singleMovie.description}}</p>
+    <p>{{singleMovie.description}}</p>
 
-<h2>Showtimes: {{singleMovie.showtimes}}</h2>
-
+    <h2>Showtimes: </h2>
+    <p>{{#each singleMovie.showtimes}}
+        <span>{{this}} |</span>
+      {{/each}}
+    </p>
+  </div>
 </div>
+
+{{! Agrupar en div y asignarles clases para más adelante darle estilos }}
